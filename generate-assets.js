@@ -106,7 +106,7 @@ async.waterfall([
   },
   function (sources, directory, cb) {
     (async () => {
-      createDirectory(directory);
+      await createDirectory(directory);
 
       await createWriteStream(`${directory}/assets.json`)
         .write(JSON.stringify(sources, null, '\t'));
