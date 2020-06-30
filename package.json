@@ -2,6 +2,9 @@
   "name": "sdk",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "assets": "node generate-assets.js"
+  },
   "license": "MIT",
   "dependencies": {
     "async": "^3.2.0",
